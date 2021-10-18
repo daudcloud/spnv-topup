@@ -1,5 +1,5 @@
 import TopupProvider from "../contexts/TopupContext";
-import "../styles/globals.css";
+import "tailwindcss/tailwind.css";
 
 function MyApp({ Component, pageProps }) {
   return (

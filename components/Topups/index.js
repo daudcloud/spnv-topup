@@ -4,11 +4,11 @@ const Topups = () => {
   const topups = useTopups();
   return (
     <>
-      {topups.map((topup) => (
-        <>
-          <h3>{topup.name}</h3>
+      {topups.map((topup, index) => (
+        <div key={index}>
+          <h3 className="text-gray-200">{topup.name}</h3>
           <p>{topup.price}</p>
-        </>
+        </div>
       ))}
     </>
   );
