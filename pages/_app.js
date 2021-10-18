@@ -1,7 +1,12 @@
-import '../styles/globals.css'
+import TopupProvider from "../contexts/TopupContext";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <TopupProvider>
+      <Component {...pageProps} />
+    </TopupProvider>
+  );
 }
 
-export default MyApp
+export default MyApp;
