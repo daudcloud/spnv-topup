@@ -1,7 +1,7 @@
-import { useTopups } from "../contexts/TopupContext";
+import { useTopups } from "../../contexts/TopupContext";
 import { useRouter } from "next/router";
 import Head from "next/head";
-import Layout from "../components/Layout";
+import Layout from "../../components/Layout";
 
 const Category = () => {
   const topups = useTopups();

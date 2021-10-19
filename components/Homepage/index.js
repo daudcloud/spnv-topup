@@ -62,7 +62,9 @@ const Homepage = () => {
           </div>
           <div className="flex justify-between items-center my-6 px-4">
             <h3 className="font-bold">{category.category}</h3>
-            <Link href={`/${category.name.toLowerCase().replace(" ", "-")}`}>
+            <Link
+              href={`/games/${category.name.toLowerCase().replace(" ", "-")}`}
+            >
               <a className="btn-main">Lihat</a>
             </Link>
           </div>
