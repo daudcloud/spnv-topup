@@ -63,9 +63,7 @@ const Homepage = () => {
           <div className="flex justify-between items-center my-6 px-4">
             <h3 className="font-bold">{category.category}</h3>
             <Link href={`/${category.name.toLowerCase().replace(" ", "-")}`}>
-              <a className="bg-blue-400 text-white font-bold rounded-md p-2 px-4 hover:bg-blue-600 cursor-pointer transition-all">
-                Lihat
-              </a>
+              <a className="btn-main">Lihat</a>
             </Link>
           </div>
         </div>
