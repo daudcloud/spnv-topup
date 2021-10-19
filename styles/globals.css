@@ -4,6 +4,6 @@
 
 @layer components {
   .btn-main {
-    @apply bg-blue-400 text-white font-bold rounded-md p-2 px-4 hover:bg-blue-600 cursor-pointer transition-all;
+    @apply bg-blue-400 text-white font-bold rounded-md p-2 px-4 hover:bg-blue-600 cursor-pointer transition-all focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
   }
 }
