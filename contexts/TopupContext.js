@@ -10,7 +10,7 @@ export default function TopupProvider({ children }) {
   const [topups, setTopups] = useState([]);
 
   useEffect(async () => {
-    const res = await fetch("http://192.168.2.151:3000/api/hello");
+    const res = await fetch("http://192.168.2.123:3000/api/hello");
     const data = await res.json();
     setTopups(data);
   });
