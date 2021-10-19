@@ -27,7 +27,7 @@ const Homepage = () => {
     },
     {
       name: "Steam Wallet",
-      category: "Steam Wallet",
+      category: "Steam Wallet IDR",
     },
     {
       name: "Megaxus",
@@ -46,7 +46,6 @@ const Homepage = () => {
       category: "COD Mobile",
     },
   ]);
-  console.log(categories);
   return (
     <div className="grid grid-cols-3 gap-8 pb-20">
       {categories.map((category) => (
