@@ -47,9 +47,9 @@ const Homepage = () => {
     },
   ]);
   return (
-    <div className="grid grid-cols-3 gap-8 pb-20">
-      {categories.map((category) => (
-        <div className="rounded-xl overflow-hidden shadow-md">
+    <div className="grid xl:grid-cols-4 lg:grid-cols-3 gap-5 pb-20 md:grid-cols-2">
+      {categories.map((category, index) => (
+        <div className="card" key={index}>
           {/* image */}
           <div className="relative w-full h-36">
             <Image
@@ -60,12 +60,14 @@ const Homepage = () => {
               objectFit="cover"
             />
           </div>
-          <div className="flex justify-between items-center my-6 px-4">
-            <h3 className="font-bold">{category.category}</h3>
+          <div className="flex justify-between items-center p-4">
+            <h3 className="font-bold text-sm text-gray-900">
+              {category.category}
+            </h3>
             <Link
               href={`/games/${category.name.toLowerCase().replace(" ", "-")}`}
             >
-              <a className="btn-main">Lihat</a>
+              <a className="btn-main text-sm">Lihat</a>
             </Link>
           </div>
         </div>
